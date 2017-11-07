@@ -1,0 +1,52 @@
+
+.navbar-side{
+  display: block;
+
+  background-color: $primary-color;
+
+  width: 60px;
+  height: 100vh;
+
+  padding-top: 5px;
+
+  text-align: center;
+}
+
+.nav-body{
+  display: flex;
+  width: 100%;
+
+  flex-direction: column;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  >li{
+    box-sizing: border-box;
+
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    list-style-type: none;
+
+    text-align: inherit;
+    >a{
+      width: 100%;
+
+      color: inherit;
+      font-size: 1.25em;
+    }
+    >a:hover{
+      text-decoration: none;
+    }
+  }
+  >li:hover{
+    background-color: $nav-link-active;
+    cursor: pointer;
+  }
+  >.active{
+    background-color: $nav-link-active;
+    color: inherit;
+    border-right: $secondary-color solid 4px;
+  }
+}

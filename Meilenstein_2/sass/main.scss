@@ -1,0 +1,7 @@
+@import "0_base/colors";
+@import "1_layout/side_navbar";
+
+body {
+  display: flex;
+  background-color: $background;
+}

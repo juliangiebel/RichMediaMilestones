@@ -1,4 +1,4 @@
 
-set PATH=%PATH%;E:\DevEnv\Ruby\bin\
+set PATH=%PATH%;G:\DevEnv\Ruby\bin\
 
 start cmd

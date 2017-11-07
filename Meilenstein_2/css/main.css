@@ -1,0 +1,40 @@
+.navbar-side {
+  display: block;
+  background-color: #ffce82;
+  width: 60px;
+  height: 100vh;
+  padding-top: 5px;
+  text-align: center; }
+
+.nav-body {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 0; }
+  .nav-body > li {
+    box-sizing: border-box;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    list-style-type: none;
+    text-align: inherit; }
+    .nav-body > li > a {
+      width: 100%;
+      color: inherit;
+      font-size: 1.25em; }
+    .nav-body > li > a:hover {
+      text-decoration: none; }
+  .nav-body > li:hover {
+    background-color: #ffbe59;
+    cursor: pointer; }
+  .nav-body > .active {
+    background-color: #ffbe59;
+    color: inherit;
+    border-right: #82b3ff solid 4px; }
+
+body {
+  display: flex;
+  background-color: #343434; }
+
+/*# sourceMappingURL=main.css.map */
