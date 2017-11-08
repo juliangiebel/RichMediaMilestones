@@ -1,0 +1,26 @@
+
+$f-margin: 80px;
+$center-height: 40px;
+
+
+.carousel {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: content-box;
+  background-image: url("../resources/pictures/testIMG.jpg");
+  .center {
+    height: $center-height;
+    width: 100%;
+  }
+  .glyphicon {
+    font-size: 2em;
+  }
+  .f-left {
+    margin-left: $f-margin;
+  }
+  .f-right {
+    margin-right: $f-margin;
+  }
+}

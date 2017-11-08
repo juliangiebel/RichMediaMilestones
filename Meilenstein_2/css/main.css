@@ -1,6 +1,20 @@
+.center {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto; }
+
+.invert {
+  filter: invert(100); }
+
+.f-left {
+  float: left; }
+
+.f-right {
+  float: right; }
+
 .navbar-side {
   display: block;
-  background-color: #ffce82;
   width: 60px;
   height: 100vh;
   padding-top: 5px;
@@ -15,23 +29,49 @@
   padding: 0; }
   .nav-body > li {
     box-sizing: border-box;
-    padding-top: 1em;
-    padding-bottom: 1em;
     list-style-type: none;
     text-align: inherit; }
     .nav-body > li > a {
+      display: block;
       width: 100%;
-      color: inherit;
-      font-size: 1.25em; }
-    .nav-body > li > a:hover {
-      text-decoration: none; }
-  .nav-body > li:hover {
-    background-color: #ffbe59;
-    cursor: pointer; }
-  .nav-body > .active {
-    background-color: #ffbe59;
-    color: inherit;
-    border-right: #82b3ff solid 4px; }
+      padding-top: .8em;
+      padding-bottom: .8em; }
+
+.carousel {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: content-box;
+  background-image: url("../resources/pictures/testIMG.jpg"); }
+  .carousel .center {
+    height: 40px;
+    width: 100%; }
+  .carousel .glyphicon {
+    font-size: 2em; }
+  .carousel .f-left {
+    margin-left: 80px; }
+  .carousel .f-right {
+    margin-right: 80px; }
+
+.navbar-side {
+  background-color: #ffce82; }
+
+.nav-body > li > a {
+  color: inherit;
+  font-size: 1.25em; }
+.nav-body > li > a:hover {
+  text-decoration: none; }
+.nav-body > li:hover {
+  background-color: #ffbe59;
+  cursor: pointer; }
+.nav-body > .active {
+  background-color: #ffbe59;
+  color: inherit;
+  border-right: #82b3ff solid 4px; }
+
+.carousel .f-left, .carousel .f-right {
+  cursor: pointer; }
 
 body {
   display: flex;
