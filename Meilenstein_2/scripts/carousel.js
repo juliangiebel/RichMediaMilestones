@@ -63,13 +63,51 @@ function createSequence(list,promise) {
 
 //--Carousel.js--
 
-var GALLERY_PATH = "../resources/gallery.json";
+const GALLERY_PATH = "../resources/gallery.json";
+//Aus zeitgründen lade ich nicht eine json datei fpr die liste der bilder
+class Carousel {
 
-var imglist;
+  constructor(imgpath ,jsonpath, leftButton, rightButton, outElement) {
+
+
+    this.currentPos = 0;
+
+    this.path = imgpath;
+    this.imglist = ["img1.jpg","img2.jpg","img3.jpg","img4.jpg"];
+
+    this.element = outElement;
+
+    $(leftButton).click(this.left.bind(this));
+    $(rightButton).click(this.right.bind(this));
+
+    this.changeImg();
+  }
+
+  left(){
+    console.log(Math.max((this.currentPos-1,0)));
+    this.currentPos = Math.max((this.currentPos-1),0);
+    this.changeImg();
+  }
+
+  right(){
+    console.log("right");
+    this.currentPos = Math.min((this.currentPos+1),this.imglist.length-1);
+    this.changeImg();
+  }
+
+  changeImg(){
+    console.log("url('"+this.path+this.imglist[this.currentPos]+"')");
+    $(this.element).css("background-image", "url('"+this.path+this.imglist[this.currentPos]+"')");
+  }
+
+}
+
+//----------------------------------
+
+var carousel;
 
 $("document").ready(function() {
-  // Setup events:
-  $("#js-carousel-left")
   // Setup imglist:
-  imglist = getJson(GALLERY_PATH);
+  //imglist = getJson(GALLERY_PATH);
+  carousel = new Carousel("resources/pictures/","","#js-carousel-left","#js-carousel-right", "#js-carousel");
 });

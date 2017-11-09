@@ -1,0 +1,13 @@
+// Base
+@import "0_base/colors";
+@import "0_base/misc";
+// Layout
+@import "1_layout/side_navbar";
+@import "1_layout/newsgrid";
+// Style
+@import "2_style/side_navbar";
+
+body {
+  display: flex;
+  background-color: $background;
+}

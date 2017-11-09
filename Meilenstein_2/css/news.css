@@ -37,21 +37,23 @@
       padding-top: .8em;
       padding-bottom: .8em; }
 
-.carousel {
+.month-menu {
   width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-clip: content-box; }
-  .carousel .center {
-    height: 40px;
-    width: 100%; }
-  .carousel .glyphicon {
-    font-size: 2em; }
-  .carousel .f-left {
-    margin-left: 80px; }
-  .carousel .f-right {
-    margin-right: 80px; }
+  height: 40px;
+  background-color: #82b3ff; }
+
+.news-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100vw;
+  height: 100vh; }
+  .news-container .news {
+    display: none;
+    height: 10em;
+    width: 14em;
+    margin: 1em; }
 
 .navbar-side {
   background-color: #ffce82; }
@@ -69,11 +71,8 @@
   color: inherit;
   border-right: #82b3ff solid 4px; }
 
-.carousel .f-left, .carousel .f-right {
-  cursor: pointer; }
-
 body {
   display: flex;
   background-color: #343434; }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=news.css.map */
