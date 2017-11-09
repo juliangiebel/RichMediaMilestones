@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <link rel="stylesheet" href="../Bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="../style.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Meilenstein 1 | Home</title>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="container-liquid">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="../index.html">Meilenstein 1(+2.3)</a>
+  </div>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="jqueryanim.html">JQuery Animation</a></li>
+      <li><a href="cssanim.html">CSS3 Animation</a></li>
+      <li><a href="Kunden.html">Kunden</a></li>
+      <li class ='active'><a href="KundenEintragen.html">Kunden+</a></li>
+    </ul>
+  </div>
+</div>
+</nav>
+<div class="main-container">
+    <form id="myForm" method="post" action=" ">
+      <br/><br/><br/>
+      <label for="name">Nachname</label><br/>
+      <input id="name" type="text" name="name" value="Mustermann" />
+      <br/>
+      <label for="vorname">Vorname</label><br/>
+      <input id="vorname" type="text" name="vorname" value="Max" />
+      <br/>
+      <label for="geschlecht">Geschlecht</label><br/>
+      <input id="geschlecht" type="text" name="geschlecht" value="Männlich" />
+      <br/>
+      <label for="mail">E-Mail</label><br/>
+      <input id="mail" type="text" name="mail" value="max.muster@bsp.de" />
+      <br/>
+      <label for="geburtsdatum">Geburtsdatum</label><br/>
+      <input id="geburtsdatum" type="text" name="geburtsdatum" value="01.01.2001" />
+      <br/>
+      <label for="adresse">Addresse</label><br/>
+      <input id="adresse" type="text" name="adresse" value="Musterstraße 1" />
+      <br/>
+      <input id="mySubmitButton" type="submit" value="Submit" />
+    </form>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</body>
+
+
+
+<script>
+const FORMID = "myForm";
+
+$('#mySubmitButton').on('click', function(e) {
+  e.preventDefault();
+  let entry = readForm(FORMID);
+  putEntry(entry);
+});
+
+function readForm(formID){
+  let output = {
+    vorname: $("#"+formID+" > #vorname").val(),
+    name: $("#"+formID+" > #name").val(),
+    geschlecht: $("#"+formID+" > #geschlecht").val(),
+    mail: $("#"+formID+" > #mail").val(),
+    geburtsdatum: $("#"+formID+" > #geburtsdatum").val(),
+    adresse: $("#"+formID+" > #adresse").val(),
+    id: ""
+  };
+  output.id = output.vorname + output.name;
+  return output;
+};
+
+function putEntry(entry){
+  if(localStorage.getItem("index") === null) {
+    let nIDList = [entry.id];
+    localStorage.setItem("index", JSON.stringify(nIDList));
+  }
+  else{
+    localStorage.index = JSON.stringify(JSON.parse(localStorage.setItem.index).push(entry.id));
+  }
+  localStorage.setItem(entry.id , JSON.stringify(entry));
+}
+</script>
+</html>
