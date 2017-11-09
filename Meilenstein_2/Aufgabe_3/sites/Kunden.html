@@ -69,15 +69,17 @@
     +entry.geburtsdatum+"</td><td>"
     +entry.adresse+"</td><td>"
     +"<input type=\"button\" class= \"btn entry-rm\" value=\"Entfernen\" data-rm=\""+entry.id+"\"></td></tr>";
+    console.log(tableID);
+    $("#out-table").append(row);
 
-    $("#"+tableID).append(row);
-
-    $("*[data-rm='"+entry.id+"']").click(rmEntry);
+    $('*[data-rm='+entry.id+']').click(rmEntry);
     }
 
   function rmEntry(){
+    console.log("Delete");
     let entryID = $(this).data("rm");
-    $("#"+entryID.remove);
+    console.log(entryID);
+    $("#"+entryID).remove();
 
   }
 
@@ -87,9 +89,9 @@
 
   function populateTable(tableID) {
     let index = JSON.parse(localStorage.index);
-    console.log(index.length);
+    //console.log(index.length);
     for(let i = 0; i<index.length; i = i+1){
-      console.log(JSON.parse(localStorage.getItem(index[i])));
+      //console.log(JSON.parse(localStorage.getItem(index[i])));
       addEntry(JSON.parse(localStorage.getItem(index[i]), tableID));
     }
   }
