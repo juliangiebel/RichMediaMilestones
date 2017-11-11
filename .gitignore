@@ -54,3 +54,7 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/sass,macos,windows
+
+#Costum
+package-lock.json
+
