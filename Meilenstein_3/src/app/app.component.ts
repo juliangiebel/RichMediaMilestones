@@ -8,6 +8,7 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { HelpPage } from '../pages/help/help';
 import { OptionsPage } from '../pages/options/options';
+//import { DataFormModalPage } from '../pages/data-form-modal/data-form-modal'
 
 @Component({
   templateUrl: 'app.html'

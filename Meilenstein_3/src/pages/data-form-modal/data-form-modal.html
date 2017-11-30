@@ -1,18 +1,44 @@
-<!--
-  Generated template for the DataFormModalPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
   <ion-navbar>
-    <ion-title>DataFormModal</ion-title>
+    <ion-title>Neuer Eintrag:</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+<!-- Diese zeile hat mich 1,5 Stunden Zeit gekostet! : (   -->
+  <form [formGroup]="rForm" (ngSubmit)="submit(rForm.value)">
+  <ion-list>
 
+    <ion-item>
+      <ion-label floating>Name</ion-label>
+      <ion-input type="text" formControlName="name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-textarea placeholder="Enter a description (max. 500)" formControlName="description"></ion-textarea>>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label floating>Rating (0-5)</ion-label>
+      <ion-input type="number" placeholder="0" formControlName="rating"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label inset>Lat (xx.xxxxx)</ion-label>
+      <ion-input type="number" formControlName="lat"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label inset>Lng (xx.xxxxx)</ion-label>
+      <ion-input type="number" formControlName="lng"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <input type="submit" ion-button  value="OK" [disabled]="!rForm.valid">
+    </ion-item>
+  </ion-list>
+  </form>
 </ion-content>

@@ -4,7 +4,7 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { IonicStorageModule } from '@ionic/storage';
 import { HttpModule } from '@angular/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 //App/Pages
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -16,8 +16,10 @@ import { DetailModalPageModule} from '../pages/detail-modal/detail-modal.module'
 //Native
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { Geolocation } from '@ionic-native/geolocation';
 //Providers
 import { DataProvider } from '../providers/data/data';
+import { GpsProvider } from '../providers/gps/gps';
 //Components
 import { ComponentsModule } from '../components/components.module';
 
@@ -38,7 +40,8 @@ import { ComponentsModule } from '../components/components.module';
     ComponentsModule,
     DataFormModalPageModule,
     DetailModalPageModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -52,7 +55,9 @@ import { ComponentsModule } from '../components/components.module';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    DataProvider
+    DataProvider,
+    Geolocation,
+    GpsProvider 
   ]
 })
 export class AppModule {}

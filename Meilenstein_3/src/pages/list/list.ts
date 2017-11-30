@@ -46,8 +46,17 @@ export class ListPage {
     this.openModal('DetailModalPage', this.data[id],()=>{});
   }
   
+  addEntry(){
+    this.openModal('DataFormModalPage', {}, (entry: Data) => {
+      if(entry != undefined){
+        this.data.push(entry);
+      }
+      this.saveData();
+    });
+  }
+  
   openModal(page: string, lData: any, call: (data: any) => any) {
-    const modalInstance = this.modal.create(page,  {data: lData});
+    const modalInstance = this.modal.create(page,  {data: lData},{showBackdrop: false});
     modalInstance.present();
     modalInstance.onDidDismiss(call); 
       

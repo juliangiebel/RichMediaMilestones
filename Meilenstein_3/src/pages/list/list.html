@@ -1,9 +1,22 @@
 <ion-header>
   <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Points of interest</ion-title>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col>
+          <ion-title>Points of interest</ion-title>
+        </ion-col>
+        <ion-col col-8>
+        </ion-col>
+        <ion-col>
+          <button ion-button float-right  (click)="addEntry()" [disabled]=false><ion-icon name="add"></ion-icon></button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </ion-navbar>
 </ion-header>
 
