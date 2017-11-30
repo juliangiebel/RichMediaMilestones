@@ -12,11 +12,11 @@ export class HomePage {
     
     this.dataProvider.setData("testKey", {name: "Guy"}).catch(msg => console.log(msg))
       .then(() => {
-      this.dataProvider.getData("testKey").then(data => {
+      this.dataProvider.getData("testKey","assets/data/data.json").then(data => {
       console.log(data);
     });
     });
-    this.dataProvider.getData("testKey").then(data => {
+    this.dataProvider.getData("testKey","assets/data/data.json").then(data => {
       console.log(data);
     });
   }

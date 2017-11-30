@@ -1,0 +1,21 @@
+lat,lng,name,desc,rating
+-18.94227, 87.24916, "Bierkeller", "Ein toller Bierkeller.", 4
+24.74227, 50.94916, "Katzenwäscherei", "Eine wäscherei die deine Katzen wäscht.", 3
+39.15318, -35.78972, "Müder Programmierer", "Eine sehr müde Person die sich stundenlang darüber den Kopf zerbrochen hat warum die Google Maps API nicht lädt bis er darauf gekommen ist das er ScriptBlocker noch an hatte.", 5
+-19.94227, 82.24016, "Spaß Park", "Spaß Park Fleisch verarbeitungs Anlage. Es ist grade 6 uhr morgens und ich habe nicht geschlafen", 1
+54.34559, -19.94227, "Netto", "Gleich mal zu netto. Blöde Werbung", 2
+38.37384, -56.34518, "Sand", "Sand. Es ist überall, gewöhn dich dran", 4
+22.22222, 33.33333, "Platz 1", "Laden 1 der Platz Kette", 1
+33.33333, 44.44444, "Platz 2", "Laden 2 der Platz Kette", 2
+44.44444, 55.55555, "Platz 3", "Laden 3 der Platz Kette", 3
+55.55555, 66.66666, "Platz 4", "Laden 4 der Platz Kette", 4
+66.66666, 77.78787, "Platz 5", "Laden 5 der Platz Kette", 1
+77.87871, -11.11111, "Uhrladen", "Verkauft Uhren", 4
+-11.11111, -22.22222, "Platz 6", "Laden 6 der Platz Kette", 2
+10.3731, -33.33333, "Platz 7", "Laden 7 der Platz Kette", 3
+-22.22222, -44.44444, "Platz 8", "Laden 8 der Platz Kette", 4
+-33.33333, 55.55555, "Platz 9", "Laden 9 der Platz Kette", 1
+-44.44444, 66.66666, "Platz 10", "Laden 10 der Platz Kette", 2
+-55.55555, 77.78787, "Cafe Schlechter Witz", "Es gibt 10 arten von Menschen, die die Binärcode verstehen und die es nicht tun", 5
+22.22222, 33.33333, "Große Turmuhr", "Sie zeigt grade auf 6:18", 3
+56.23420, 22.33445, "Anti Google Maps Kampagne", "Ich will die wörter Google und Maps nie wieder in einem Satz hören", 1

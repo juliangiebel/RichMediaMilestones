@@ -4,6 +4,7 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { IonicStorageModule } from '@ionic/storage';
 import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
 //App/Pages
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -11,6 +12,7 @@ import { ListPage } from '../pages/list/list';
 import { HelpPage } from '../pages/help/help';
 import { OptionsPage } from '../pages/options/options';
 import { DataFormModalPageModule } from '../pages/data-form-modal/data-form-modal.module';
+import { DetailModalPageModule} from '../pages/detail-modal/detail-modal.module';
 //Native
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -34,7 +36,9 @@ import { ComponentsModule } from '../components/components.module';
     IonicStorageModule.forRoot(),
     HttpModule,
     ComponentsModule,
-    DataFormModalPageModule
+    DataFormModalPageModule,
+    DetailModalPageModule,
+    FormsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

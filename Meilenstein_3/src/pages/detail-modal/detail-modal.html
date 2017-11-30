@@ -7,12 +7,28 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>DetailModal</ion-title>
+    <ion-title>{{name}}</ion-title>
+    <span float-right>
+      <span *ngIf="(rating > 0); else s1"><ion-icon name="star"></ion-icon></span>
+      <ng-template #s1><ion-icon name="star-outline"></ion-icon></ng-template>
+      <span *ngIf="(rating > 1); else s2"><ion-icon name="star"></ion-icon></span>
+      <ng-template #s2><ion-icon name="star-outline"></ion-icon></ng-template>
+      <span *ngIf="(rating > 2); else s3"><ion-icon name="star"></ion-icon></span>
+      <ng-template #s3><ion-icon name="star-outline"></ion-icon></ng-template>
+      <span *ngIf="(rating > 3); else s4"><ion-icon name="star"></ion-icon></span>
+      <ng-template #s4><ion-icon name="star-outline"></ion-icon></ng-template>
+      <span *ngIf="(rating > 4); else s5"><ion-icon name="star"></ion-icon></span>
+      <ng-template #s5><ion-icon name="star-outline"></ion-icon></ng-template>
+    </span>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+  <p>{{desc}}</p>
+  <p>
+   <span>Lat: {{lat}}</span>
+   <span>Lng: {{lng}}</span>
+  </p>
 </ion-content>

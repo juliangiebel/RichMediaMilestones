@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+	<data>
+		<lat>-18.94227</lat>
+		<lng>87.24916</lng>
+		<name>Bierkeller</name>
+		<desc>Ein toller Bierkeller.</desc>
+		<rating>4</rating>
+	</data>
+	<data>
+		<lat>24.74227</lat>
+		<lng>50.94916</lng>
+		<name>Katzenwäscherei</name>
+		<desc>Eine wäscherei die deine Katzen wäscht.</desc>
+		<rating>3</rating>
+	</data>
+	<data>
+		<lat>39.15318</lat>
+		<lng>-35.78972</lng>
+		<name>Müder Programmierer</name>
+		<desc>Eine sehr müde Person die sich stundenlang darüber den Kopf zerbrochen hat warum die Google Maps API nicht lädt bis er darauf gekommen ist das er ScriptBlocker noch an hatte.</desc>
+		<rating>5</rating>
+	</data>
+	<data>
+		<lat>-19.94227</lat>
+		<lng>82.24016</lng>
+		<name>Spaß Park</name>
+		<desc>Spaß Park Fleisch verarbeitungs Anlage. Es ist grade 6 uhr morgens und ich habe nicht geschlafen</desc>
+		<rating>1</rating>
+	</data>
+	<data>
+		<lat>54.34559</lat>
+		<lng>-19.94227</lng>
+		<name>Netto</name>
+		<desc>Gleich mal zu netto. Blöde Werbung</desc>
+		<rating>2</rating>
+	</data>
+	<data>
+		<lat>38.37384</lat>
+		<lng>-56.34518</lng>
+		<name>Sand</name>
+		<desc>Sand. Es ist überall, gewöhn dich dran</desc>
+		<rating>4</rating>
+	</data>
+	<data>
+		<lat>22.22222</lat>
+		<lng>33.33333</lng>
+		<name>Platz 1</name>
+		<desc>Laden 1 der Platz Kette</desc>
+		<rating>1</rating>
+	</data>
+	<data>
+		<lat>33.33333</lat>
+		<lng>44.44444</lng>
+		<name>Platz 2</name>
+		<desc>Laden 2 der Platz Kette</desc>
+		<rating>2</rating>
+	</data>
+	<data>
+		<lat>44.44444</lat>
+		<lng>55.55555</lng>
+		<name>Platz 3</name>
+		<desc>Laden 3 der Platz Kette</desc>
+		<rating>3</rating>
+	</data>
+	<data>
+		<lat>55.55555</lat>
+		<lng>66.66666</lng>
+		<name>Platz 4</name>
+		<desc>Laden 4 der Platz Kette</desc>
+		<rating>4</rating>
+	</data>
+	<data>
+		<lat>66.66666</lat>
+		<lng>77.78787</lng>
+		<name>Platz 5</name>
+		<desc>Laden 5 der Platz Kette</desc>
+		<rating>1</rating>
+	</data>
+	<data>
+		<lat>77.87871</lat>
+		<lng>-11.11111</lng>
+		<name>Uhrladen</name>
+		<desc>Verkauft Uhren</desc>
+		<rating>4</rating>
+	</data>
+	<data>
+		<lat>-11.11111</lat>
+		<lng>-22.22222</lng>
+		<name>Platz 6</name>
+		<desc>Laden 6 der Platz Kette</desc>
+		<rating>2</rating>
+	</data>
+	<data>
+		<lat>10.3731</lat>
+		<lng>-33.33333</lng>
+		<name>Platz 7</name>
+		<desc>Laden 7 der Platz Kette</desc>
+		<rating>3</rating>
+	</data>
+	<data>
+		<lat>-22.22222</lat>
+		<lng>-44.44444</lng>
+		<name>Platz 8</name>
+		<desc>Laden 8 der Platz Kette</desc>
+		<rating>4</rating>
+	</data>
+	<data>
+		<lat>-33.33333</lat>
+		<lng>55.55555</lng>
+		<name>Platz 9</name>
+		<desc>Laden 9 der Platz Kette</desc>
+		<rating>1</rating>
+	</data>
+	<data>
+		<lat>-44.44444</lat>
+		<lng>66.66666</lng>
+		<name>Platz 10</name>
+		<desc>Laden 10 der Platz Kette</desc>
+		<rating>2</rating>
+	</data>
+	<data>
+		<lat>-55.55555</lat>
+		<lng>77.78787</lng>
+		<name>Cafe Schlechter Witz</name>
+		<desc>Es gibt 10 arten von Menschen, die die Binärcode verstehen und die es nicht tun</desc>
+		<rating>5</rating>
+	</data>
+	<data>
+		<lat>22.22222</lat>
+		<lng>33.33333</lng>
+		<name>Große Turmuhr</name>
+		<desc>Sie zeigt grade auf 6:18</desc>
+		<rating>3</rating>
+	</data>
+	<data>
+		<lat>56.2342</lat>
+		<lng>22.33445</lng>
+		<name>Anti Google Maps Kampagne</name>
+		<desc>Ich will die wörter Google und Maps nie wieder in einem Satz hören</desc>
+		<rating>1</rating>
+	</data>
+	

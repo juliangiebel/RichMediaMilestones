@@ -15,11 +15,23 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class DetailModalPage {
 
+  name: string;
+  rating: number;
+  desc: string;
+  lat: number;
+  lng: number;
+  
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    
+  ionViewWillLoad() {
+    let tempData = this.navParams.get("data");
+    console.log(tempData.rating);
+    this.name  = tempData.name;
+    this.rating = tempData.rating;
+    this.desc  = tempData.desc;
+    this.lat   = tempData.lat;
+    this.lng   = tempData.lng;
   }
 
 }

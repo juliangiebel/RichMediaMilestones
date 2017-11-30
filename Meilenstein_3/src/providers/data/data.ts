@@ -25,18 +25,20 @@ export class DataProvider {
     
   }
 
- getData(key){
+ getData(key, defaultJson){
     
    return new Promise((resolve, reject) =>{
      
      this.storage.get(key).then(data => {
-       console.log(data);
+       console.log("provider:\n"+data);
        if(data != null){
         console.log("Loading from storage.");
         resolve(data);
-       }else{
+       }else if(defaultJson != undefined){
         console.log("Loading from json.");
-        this.http.get("assets/data/data.json").subscribe(data => {resolve(data.json())});
+        this.http.get(defaultJson).subscribe(data => {resolve(data.json())});
+       }else {
+         reject("No entry found and no default file passed to getData.")
        }
      }).catch(msg => {
        reject("Error loading data:" + msg);
@@ -45,8 +47,8 @@ export class DataProvider {
    });
  }
   
- setData(key, data){
-   return this.storage.set(key, data);
+ setData(key, lData){
+   return this.storage.set(key, {data: lData});
  }
   
 }

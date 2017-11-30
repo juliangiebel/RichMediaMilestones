@@ -23,7 +23,7 @@ export class ListPage {
   
   ionViewWillLoad(){
     
-    this.dataProvider.getData(DATA_KEY).then((data:Data) => {this.data = data.data; console.log(this.data)}).catch(msg => console.log(msg));
+    this.dataProvider.getData(DATA_KEY,"assets/data/data.json").then((data:Data) => {this.data = data.data; console.log(this.data)}).catch(msg => console.log(msg));
     
   }
   
@@ -46,8 +46,8 @@ export class ListPage {
     this.openModal('DetailModalPage', this.data[id],()=>{});
   }
   
-  openModal(page: string, data: any, call: (data) => any) {
-    const modalInstance = this.modal.create(page, data);
+  openModal(page: string, lData: any, call: (data: any) => any) {
+    const modalInstance = this.modal.create(page,  {data: lData});
     modalInstance.present();
     modalInstance.onDidDismiss(call); 
       
