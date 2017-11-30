@@ -1,37 +1,55 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, ModalController } from 'ionic-angular';
+import { DataProvider } from '../../providers/data/data';
+
+const DATA_KEY = "app-data"
+
+interface Data {
+    data: any[]
+  }
+//*ngFor="let item of items; let i = index"
 
 @Component({
   selector: 'page-list',
   templateUrl: 'list.html'
 })
 export class ListPage {
-  selectedItem: any;
-  icons: string[];
-  items: Array<{title: string, note: string, icon: string}>;
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-    // If we navigated to this page, we will have an item available as a nav param
-    this.selectedItem = navParams.get('item');
-
-    // Let's populate this page with some filler content for funzies
-    this.icons = ['flask', 'wifi', 'beer', 'football', 'basketball', 'paper-plane',
-    'american-football', 'boat', 'bluetooth', 'build'];
-
-    this.items = [];
-    for (let i = 1; i < 11; i++) {
-      this.items.push({
-        title: 'Item ' + i,
-        note: 'This is item #' + i,
-        icon: this.icons[Math.floor(Math.random() * this.icons.length)]
-      });
-    }
+  
+  data: any[];
+  
+  constructor(public navCtrl: NavController, public navParams: NavParams, private modal: ModalController, private dataProvider: DataProvider) {
+    
   }
-
-  itemTapped(event, item) {
-    // That's right, we're pushing to ourselves!
-    this.navCtrl.push(ListPage, {
-      item: item
-    });
+  
+  ionViewWillLoad(){
+    
+    this.dataProvider.getData(DATA_KEY).then((data:Data) => {this.data = data.data; console.log(this.data)}).catch(msg => console.log(msg));
+    
+  }
+  
+  ionViewDidLoad(){
+    console.log("View Loaded")
+    
+    //this.openModal('DataFormModalPage');
+  }
+  
+  saveData(){
+    this.dataProvider.setData(DATA_KEY, this.data);
+  }
+  
+  remove(id: number){
+    this.data.splice(id,1);
+    this.saveData();
+  }
+  
+  showDetails(id: number){
+    this.openModal('DetailModalPage', this.data[id],()=>{});
+  }
+  
+  openModal(page: string, data: any, call: (data) => any) {
+    const modalInstance = this.modal.create(page, data);
+    modalInstance.present();
+    modalInstance.onDidDismiss(call); 
+      
   }
 }

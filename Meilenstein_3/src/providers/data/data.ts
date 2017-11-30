@@ -8,10 +8,14 @@ import {Observable} from 'rxjs/Observable';
   See https://angular.io/guide/dependency-injection for more info on providers
   and Angular DI.
 */
+interface Data {
+    data: any[]
+  }
+
 @Injectable()
 export class DataProvider {
 
-  data: any;
+  data: Data;
   
   constructor(private storage: Storage, private http: Http) {
   }

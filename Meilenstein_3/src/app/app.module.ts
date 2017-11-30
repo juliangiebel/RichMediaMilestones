@@ -8,7 +8,9 @@ import { HttpModule } from '@angular/http';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
-import { DashPage } from '../pages/dash/dash';
+import { HelpPage } from '../pages/help/help';
+import { OptionsPage } from '../pages/options/options';
+import { DataFormModalPageModule } from '../pages/data-form-modal/data-form-modal.module';
 //Native
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -23,21 +25,24 @@ import { ComponentsModule } from '../components/components.module';
     MyApp,
     HomePage,
     ListPage,
-    DashPage
+    HelpPage,
+    OptionsPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     IonicStorageModule.forRoot(),
     HttpModule,
-    ComponentsModule
+    ComponentsModule,
+    DataFormModalPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
     ListPage,
-    DashPage
+    HelpPage,
+    OptionsPage
   ],
   providers: [
     StatusBar,

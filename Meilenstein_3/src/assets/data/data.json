@@ -1,3 +1,24 @@
 {
-  "name": "test"
+  "data": [
+    {"lat": -18.94227, "lng":87.24916, "name":"Bierkeller", "desc":"Ein toller Bierkeller.", "rating":4},
+    {"lat": 24.74227, "lng":50.94916, "name":"Katzenwäscherei", "desc":"Eine wäscherei die deine Katzen wäscht.", "rating":3},
+    {"lat": 39.15318, "lng":-35.78972, "name":"Müder Programmierer", "desc":"Eine sehr müde Person die sich stundenlang darüber den Kopf zerbrochen hat warum die Google Maps API nicht lädt bis er darauf gekommen ist das er ScriptBlocker noch an hatte.", "rating":5},
+    {"lat": -19.94227, "lng":82.24016, "name":"Spaß Park", "desc":"Spaß Park Fleisch verarbeitungs Anlage. Es ist grade 6 uhr morgens und ich habe nicht geschlafen", "rating":1},
+    {"lat": 54.34559, "lng":-19.94227, "name":"Netto", "desc":"Gleich mal zu netto. Blöde Werbung", "rating":2},
+    {"lat": 38.37384, "lng":-56.34518, "name":"Sand", "desc":"Sand. Es ist überall, gewöhn dich dran", "rating":4},
+    {"lat": 22.22222, "lng":33.33333, "name":"Platz 1", "desc":"Laden 1 der Platz Kette", "rating":1},
+    {"lat": 33.33333, "lng":44.44444, "name":"Platz 2", "desc":"Laden 2 der Platz Kette", "rating":2},
+    {"lat": 44.44444, "lng":55.55555, "name":"Platz 3", "desc":"Laden 3 der Platz Kette", "rating":3},
+    {"lat": 55.55555, "lng":66.66666, "name":"Platz 4", "desc":"Laden 4 der Platz Kette", "rating":4},
+    {"lat": 66.66666, "lng":77.78787, "name":"Platz 5", "desc":"Laden 5 der Platz Kette", "rating":1},
+    {"lat": 77.87871, "lng":-11.11111, "name":"Uhrladen", "desc":"Verkauft Uhren", "rating":4},
+    {"lat": -11.11111, "lng":-22.22222, "name":"Platz 6", "desc":"Laden 6 der Platz Kette", "rating":2},
+    {"lat": 10.3731, "lng":-33.33333, "name":"Platz 7", "desc":"Laden 7 der Platz Kette", "rating":3},
+    {"lat": -22.22222, "lng":-44.44444, "name":"Platz 8", "desc":"Laden 8 der Platz Kette", "rating":4},
+    {"lat": -33.33333, "lng":55.55555, "name":"Platz 9", "desc":"Laden 9 der Platz Kette", "rating":1},
+    {"lat": -44.44444, "lng":66.66666, "name":"Platz 10", "desc":"Laden 10 der Platz Kette", "rating":2},
+    {"lat": -55.55555, "lng":77.78787, "name":"Cafe Schlechter Witz", "desc":"Es gibt 10 arten von Menschen, die die Binärcode verstehen und die es nicht tun", "rating":5},
+    {"lat": 22.22222, "lng":33.33333, "name":"Große Turmuhr", "desc":"Sie zeigt grade auf 6:18", "rating":3},
+    {"lat": 56.23420, "lng":22.33445, "name":"Anti Google Maps Kampagne", "desc":"Ich will die wörter Google und Maps nie wieder in einem Satz hören", "rating":1}
+  ]
 }
