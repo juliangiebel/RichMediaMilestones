@@ -1,11 +1,8 @@
 import { Component } from '@angular/core';
 
-/**
- * Generated class for the GmapComponent component.
- *
- * See https://angular.io/api/core/Component for more info on Angular
- * Components.
- */
+const API_KEY = 'AIzaSyBAaL4qkuJ2fICHva1_xGAnVTvCn1HFLO8 ';
+
+
 @Component({
   selector: 'gmap',
   templateUrl: 'gmap.html'

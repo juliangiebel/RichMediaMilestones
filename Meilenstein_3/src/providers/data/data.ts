@@ -42,7 +42,7 @@ export class DataProvider {
  }
   
  setData(key, data){
-   return this.storage.set(key, data)
+   return this.storage.set(key, data);
  }
   
 }
