@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>{{name}}</ion-title>
+    <ion-title (click)="close()">{{name}}</ion-title>
     <span float-right>
       <span *ngIf="(rating > 0); else s1"><ion-icon name="star"></ion-icon></span>
       <ng-template #s1><ion-icon name="star-outline"></ion-icon></ng-template>

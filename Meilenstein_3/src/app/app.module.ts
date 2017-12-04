@@ -13,6 +13,7 @@ import { HelpPage } from '../pages/help/help';
 import { OptionsPage } from '../pages/options/options';
 import { DataFormModalPageModule } from '../pages/data-form-modal/data-form-modal.module';
 import { DetailModalPageModule} from '../pages/detail-modal/detail-modal.module';
+import { MapPage } from '../pages/map/map';
 //Native
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -30,7 +31,8 @@ import { ComponentsModule } from '../components/components.module';
     HomePage,
     ListPage,
     HelpPage,
-    OptionsPage
+    OptionsPage,
+    MapPage
   ],
   imports: [
     BrowserModule,
@@ -49,7 +51,8 @@ import { ComponentsModule } from '../components/components.module';
     HomePage,
     ListPage,
     HelpPage,
-    OptionsPage
+    OptionsPage,
+    MapPage
   ],
   providers: [
     StatusBar,

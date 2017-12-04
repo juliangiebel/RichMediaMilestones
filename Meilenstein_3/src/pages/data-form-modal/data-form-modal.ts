@@ -57,7 +57,9 @@ export class DataFormModalPage {
   
   close(lData: any)
   {
-    this.view.dismiss(lData);
+    if(lData === null || lData == undefined)
+    { this.view.dismiss();}
+    else{ this.view.dismiss(lData); }
   }
   
   notify(msg, duration) {

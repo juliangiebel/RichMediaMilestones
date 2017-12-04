@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import { GpsProvider } from '../../providers/gps/gps'; 
 /**
  * Generated class for the OptionsPage page.
  *
@@ -13,12 +13,26 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'options.html',
 })
 export class OptionsPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  
+  gpsActive: boolean;
+  gpsTimeout: number;
+  
+  constructor(public navCtrl: NavController, public navParams: NavParams, private gps: GpsProvider) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad OptionsPage');
+  ionViewWillLoad() {
+    this.gpsActive = this.gps.gpsOptions.active;
+    this.gpsTimeout = this.gps.gpsOptions.timeout;
+  }
+  
+  saveOptions(){
+    console.log(this.gpsActive,this.gpsTimeout);
+    if(this.gpsActive){
+      this.gps.activate();
+    } else {
+      this.gps.deactivate();
+    }
+    this.gps.gpsOptions.timeout = this.gpsTimeout;
   }
 
 }

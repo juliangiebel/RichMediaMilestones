@@ -8,6 +8,7 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { HelpPage } from '../pages/help/help';
 import { OptionsPage } from '../pages/options/options';
+import { MapPage } from '../pages/map/map';
 //import { DataFormModalPage } from '../pages/data-form-modal/data-form-modal'
 
 @Component({
@@ -26,9 +27,10 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'POI\'s', component: ListPage },
+      { title: 'Your Positions', component: ListPage },
       { title: 'Help', component: HelpPage },
-      {  title: 'Options', component: OptionsPage }
+      { title: 'Options', component: OptionsPage },
+      { title: 'Map', component: MapPage}
     ];
 
   }

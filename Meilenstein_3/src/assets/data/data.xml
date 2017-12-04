@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-	<data>
+<root>		
+<data>
 		<lat>-18.94227</lat>
 		<lng>87.24916</lng>
 		<name>Bierkeller</name>
@@ -139,4 +140,4 @@
 		<desc>Ich will die wörter Google und Maps nie wieder in einem Satz hören</desc>
 		<rating>1</rating>
 	</data>
-	
+	</root>
