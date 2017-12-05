@@ -8,7 +8,7 @@
  * Inspired by [steampixel/simplePHPRouter](https://github.com/steampixel/simplePHPRouter)
  *
  * ---------------
- * GitHub:[juliangiebel](https://github.com/juliangiebel/)
+ * GitHub: [juliangiebel](https://github.com/juliangiebel/)
  * Date: 04.12.2017
  * Time: 20:51
  * @author Julian Giebel
@@ -54,7 +54,7 @@ namespace Router {
         }
 
     }
-
+    //TODO: Document this class.
     /**
      * Router class.
      * @package Router
@@ -94,7 +94,7 @@ namespace Router {
         }
 
         /**
-         * Adds a function to the list of functions that get called when the url couldn'T be matched against a route.
+         * Adds a function to the list of functions that get called when the url couldn't be matched against a route.
          * @param callback $function
          */
         public static function add404($function){
