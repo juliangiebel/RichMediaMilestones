@@ -1,0 +1,26 @@
+
+.sidebar {
+  background-color: $primary-color;
+}
+
+.link {
+
+  background-clip: padding-box;
+
+  width: 100%;
+
+  color: $primary-text-color;
+  text-decoration: none;
+
+  :link {
+    color: $primary-text-color;
+  }
+  :hover {
+    color: $primary-text-color;
+    background-color: $nav-link-active;
+  }
+  :active {
+    color: $primary-text-color;
+    background-color: $nav-link-active;
+  }
+}

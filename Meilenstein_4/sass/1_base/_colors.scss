@@ -1,0 +1,5 @@
+$primary-color: darken(#FFE2B5,10);
+$secondary-color: complement($primary-color);
+$nav-link-active: darken($primary-color, 8);
+$background: darken(grey, 30);
+$primary-text-color: darken(grey, 40);
