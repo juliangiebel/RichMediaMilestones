@@ -8,13 +8,14 @@
 // Style
 @import "3_style/sidebar";
 @import "3_style/header";
-//@import "3_style/list-entry";
 //---------
 
 body {
   color: $primary-text-color;
   background-color: $background;
 }
-
-
-
+form{
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+}

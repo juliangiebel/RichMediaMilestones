@@ -34,6 +34,10 @@ body {
 }
 
 .content {
+  position: absolute;
+
+  top: 0;
+
   margin-left: $sidebar-width;
-  width: auto;
+  width: calc(100vw - #{$sidebar-width});
 }

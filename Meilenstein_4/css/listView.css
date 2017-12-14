@@ -82,8 +82,18 @@ header {
 .button {
   background-color: #82b3ff; }
 
+.item-header a {
+  color: #82b3ff;
+  text-decoration: none; }
+
 body {
   color: #e6e6e6;
   background-color: #343434; }
 
-/*# sourceMappingURL=dashboard.css.map */
+.list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%; }
+
+/*# sourceMappingURL=listView.css.map */

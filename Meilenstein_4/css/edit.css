@@ -86,4 +86,9 @@ body {
   color: #e6e6e6;
   background-color: #343434; }
 
-/*# sourceMappingURL=dashboard.css.map */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px; }
+
+/*# sourceMappingURL=edit.css.map */

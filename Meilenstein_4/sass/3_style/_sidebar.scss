@@ -9,18 +9,18 @@
 
   width: 100%;
 
-  color: $primary-text-color;
+  color: $secondary-text-color;
   text-decoration: none;
 
   :link {
-    color: $primary-text-color;
+    color: $secondary-text-color;
   }
   :hover {
-    color: $primary-text-color;
+    color: $secondary-text-color;
     background-color: $nav-link-active;
   }
   :active {
-    color: $primary-text-color;
+    color: $secondary-text-color;
     background-color: $nav-link-active;
   }
 }
