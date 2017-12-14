@@ -7,7 +7,7 @@ include ('../../modules/template/Template.php');
 use Template\Template;
 ?>
 
-<?=Template::genFromList(Template::templateFromFile('../../templates/header.php'),array("title" => "Dashboard","stylesheet" => "../../css/dashboard.css"))?>
+<?=Template::genFromList(Template::templateFromFile('../../templates/header.php'),array("title" => "Dashboard","stylesheet" => "css/dashboard.css","base" => "../.."))?>
 
 <?php
 
